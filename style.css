@@ -242,11 +242,51 @@ h3 {
 }
 
 .experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
     align-items: start;
 }
 
 .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     align-items: start;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+.projects-grid .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-description {
+    text-align: justify;
+    flex-grow: 1;
+}
+
+.project-link {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #556B2F;
+    color: #E0D8C3;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.project-link:hover {
+    background: #6d8a3f;
 }
 
 
