@@ -241,6 +241,19 @@ h3 {
     margin: 5px 0;
 }
 
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+.education-grid .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .experience-grid {
     display: grid;
     grid-template-columns: 1fr;
