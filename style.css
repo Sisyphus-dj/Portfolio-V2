@@ -10,6 +10,23 @@ body {
     position: relative;
 }
 
+/* Background image container - replace 'url()' with your image path */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 0;
+}
+
 body::before {
     content: '';
     position: fixed;
@@ -350,4 +367,14 @@ footer {
     .experience-grid {
         grid-template-columns: 1fr;
     }
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
 }
